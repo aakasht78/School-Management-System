@@ -1,0 +1,197 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>School-Management-System</title>
+</head>
+<body>
+		<a href="Login.html"><input type="button" value="Login"></a>
+		<a href="SingUp.html"><input type="button" value="SingUp"></a>
+	 https://codepen.io/nerdchacha/pen/qNzwaO 
+	
+	
+	
+	
+</body>
+</html>
+ -->
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Pacifico|Righteous|Teko" rel="stylesheet">
+  <title>School-Management-System</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/6565bd61-0fe6-459e-9ae4-69ead84c1fc4.png">
+  <style>
+  @use postcss-preset-env {
+  stage: 0;
+}
+
+/* config.css */
+
+:root {
+  --baseColor: #606468;
+}
+
+/* helpers/align.css */
+
+.align {
+  display: grid;
+  place-items: center;
+}
+
+.grid {
+  inline-size: 90%;
+  margin-inline: auto;
+  max-inline-size: 20rem;
+}
+
+/* helpers/hidden.css */
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* helpers/icon.css */
+
+:root {
+  --iconFill: var(--baseColor);
+}
+
+.icons {
+  display: none;
+}
+
+.icon {
+  block-size: 1em;
+  display: inline-block;
+  fill: var(--iconFill);
+  inline-size: 1em;
+  vertical-align: middle;
+}
+
+/* layout/base.css */
+
+:root {
+  --htmlFontSize: 100%;
+
+  --bodyBackgroundColor: #2c3338;
+  --bodyColor: var(--baseColor);
+  --bodyFontFamily: "Open Sans";
+  --bodyFontFamilyFallback: sans-serif;
+  --bodyFontSize: 0.875rem;
+  --bodyFontWeight: 400;
+  --bodyLineHeight: 1.5;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--htmlFontSize);
+}
+
+body {
+  background-color: var(--bodyBackgroundColor);
+  color: var(--bodyColor);
+  font-family: "Gill Sans", sans-serif;
+  font-size: var(--bodyFontSize);
+  font-weight: var(--bodyFontWeight);
+  line-height: var(--bodyLineHeight);
+  margin: 0;
+  min-block-size: 100vh;
+}
+
+/* modules/anchor.css */
+
+:root {
+  --anchorColor: #eee;
+}
+
+a {
+  color: var(--anchorColor);
+  outline: 0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+/* modules/form.css */
+
+:root {
+  --formGap: 0.875rem;
+}
+h3 {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  padding-top: 35px;
+  margin-top: 120px;
+  color:white;
+}
+
+#SelectButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0%;
+  font-family: "Gill Sans", sans-serif;
+  
+}
+
+.selectButton {
+font-family: "Gill Sans", sans-serif;
+  margin: 10px;
+  padding:8px; 
+      font-weight: 700;
+     border-radius:100px;
+    text-transform: uppercase;
+   background-color: #121726;
+   cursor: pointer;
+   border-color: transparent;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.selectButton:hover {
+  background-color: #121726;
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px #121726;
+}
+ .selectButton:hover{
+     background-color: #121726;
+     color:#fff462;
+  }
+ 
+</style>
+
+</head>
+<body>
+	  <h3>School Management System</h3> 
+	  
+	  
+	  
+  <section id="SelectButton" class="selectButtonArea">
+
+  <a href="SingUp.html">  <button id="SelectRegister" class="selectButton">Register</button></a>
+   <a href="Login.html"> <button id="SelectLogin" class="selectButton" >Login</button></a>
+  </section>
+
+</body>
+</html>

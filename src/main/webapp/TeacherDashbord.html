@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Teacher Dashbord</title>
+
+
+<style type="text/css">
+
+
+  @use postcss-preset-env {
+  stage: 0;
+}
+
+/* config.css */
+
+:root {
+  --baseColor: #606468;
+}
+
+/* helpers/align.css */
+
+.align {
+  display: grid;
+  place-items: center;
+}
+
+.grid {
+  inline-size: 90%;
+  margin-inline: auto;
+  max-inline-size: 20rem;
+}
+
+/* helpers/hidden.css */
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* helpers/icon.css */
+
+:root {
+  --iconFill: var(--baseColor);
+}
+
+.icons {
+  display: none;
+}
+
+.icon {
+  block-size: 1em;
+  display: inline-block;
+  fill: var(--iconFill);
+  inline-size: 1em;
+  vertical-align: middle;
+}
+
+/* layout/base.css */
+
+:root {
+  --htmlFontSize: 100%;
+
+  --bodyBackgroundColor: #2c3338;
+  --bodyColor: var(--baseColor);
+  --bodyFontFamily: "Open Sans";
+  --bodyFontFamilyFallback: sans-serif;
+  --bodyFontSize: 0.875rem;
+  --bodyFontWeight: 400;
+  --bodyLineHeight: 1.5;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--htmlFontSize);
+}
+
+body {
+  background-color: var(--bodyBackgroundColor);
+  color: var(--bodyColor);
+  font-family: "Gill Sans", sans-serif;
+  font-size: var(--bodyFontSize);
+  font-weight: var(--bodyFontWeight);
+  line-height: var(--bodyLineHeight);
+  margin: 0;
+  min-block-size: 100vh;
+}
+
+/* modules/anchor.css */
+
+:root {
+  --anchorColor: #eee;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card-header {
+  padding: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.btn-warning {
+  background-color: yellow;
+  color: black;
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+
+
+
+
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: #fffbf3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 16 */
+.btn-16 {
+  border: none;
+  color: #000;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+  -7px -7px 20px 0px #fff465,
+   -4px -4px 5px 0px #fff465,
+   7px 7px 20px 0px #fff465,
+   4px 4px 5px 0px #fff465;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #131708;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+h1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  padding-top: 35px;
+  margin-top: 120px;
+  color:white;
+}
+
+
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/6565bd61-0fe6-459e-9ae4-69ead84c1fc4.png">
+</head>
+<body>
+	<!-- <a href="TeacherInsert.html"> <input type = "button" value="Insert Data"> </a> <br>	<br>	
+	<a href="TeacherUpdate.html"> <input type = "button" value="Update Data"> </a> <br>	<br>	
+	<a href="TeacherDelete.html"> <input type = "button" value="Delete Data"> </a> <br>	<br>	
+	<a href="TeacherFetch.html"> <input type = "button" value="Fetch Data"> </a> <br>	<br>	
+	 -->
+	<h1 align="center">Welcome to Teacher Dashbord</h1>
+	
+	<div class="container">
+  <div class="card">
+    
+    <a href="TeacherInsert.html">
+      <div class="frame">
+	 <button class="custom-btn btn-16">Insert Data</button>
+  <p style="font-family: Andale Mono, monospace;"></div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="TeacherUpdate.html">
+      <div class="frame">
+	 <button class="custom-btn btn-16">Update Data</button>
+  <p style="font-family: Andale Mono, monospace;"></div>
+    </a>
+  </div>
+
+  <div class="card">
+    
+    <a href="TeacherDelete.html">
+      <div class="frame">
+	 <button class="custom-btn btn-16">Delete Data</button>
+  <p style="font-family: Andale Mono, monospace;"></div>
+    </a>
+  </div>
+
+  <div class="card">
+    
+    <a href="TeacherFetch.html">
+      <div class="frame">
+	 <button class="custom-btn btn-16">Fetch Data</button>
+  <p style="font-family: Andale Mono, monospace;"></div>
+    </a>
+  </div>
+</div>
+	
+</body>
+</html>
